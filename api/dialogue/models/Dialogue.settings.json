@@ -36,10 +36,13 @@
       "type": "enumeration"
     },
     "leftCharacter": {
-      "model": "visual",
       "via": "dialogues"
     },
     "rightCharacter": {
+      "model": "visual",
+      "via": "dialogues"
+    },
+    "background": {
       "model": "visual",
       "via": "dialogues"
     }
