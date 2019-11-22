@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -31,6 +34,14 @@
         "right"
       ],
       "type": "enumeration"
+    },
+    "leftCharacter": {
+      "model": "visual",
+      "via": "dialogues"
+    },
+    "rightCharacter": {
+      "model": "visual",
+      "via": "dialogues"
     }
   }
 }
