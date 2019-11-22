@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/visuals",
+      "handler": "Visual.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visuals/count",
+      "handler": "Visual.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/visuals/:id",
+      "handler": "Visual.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/visuals",
+      "handler": "Visual.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/visuals/:id",
+      "handler": "Visual.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/visuals/:id",
+      "handler": "Visual.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

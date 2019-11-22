@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "visuals",
+  "info": {
+    "name": "visual",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "character",
+        "background"
+      ],
+      "type": "enumeration"
+    },
+    "filename": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "mediatype": {
+      "enum": [
+        "image",
+        "json"
+      ],
+      "type": "enumeration"
+    }
+  }
+}
