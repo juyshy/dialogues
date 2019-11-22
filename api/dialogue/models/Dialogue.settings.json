@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "dialogues",
+  "info": {
+    "name": "dialogue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "minLength": 3,
+      "required": true,
+      "type": "string"
+    },
+    "author": {
+      "model": "user",
+      "via": "dialogues",
+      "plugin": "users-permissions"
+    },
+    "text": {
+      "required": true,
+      "type": "text"
+    },
+    "starter": {
+      "enum": [
+        "left",
+        "right"
+      ],
+      "type": "enumeration"
+    }
+  }
+}
